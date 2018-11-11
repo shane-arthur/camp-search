@@ -1,0 +1,33 @@
+@import '../../../../../scss/mixins/index';
+@import '../../../../../scss/themes/index';
+
+
+$margin: 5%;
+
+mat-card{
+    text-align: center;
+    @include linear-gradient(mat-color($app-light-gray), mat-color($app-dark-gray));
+    height: 720px;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 0.9725rem;
+    margin-top: $margin;
+
+    mat-card-content{
+        margin-top: $margin;
+
+        div{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    input{
+        font-size: 1.1rem;
+    }
+
+    mat-icon{
+        margin-left: $margin/2;
+    }
+}

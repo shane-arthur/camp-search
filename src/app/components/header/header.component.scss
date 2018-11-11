@@ -1,0 +1,24 @@
+@import '../../../scss/mixins/index';
+@import '../../../scss/themes/index';
+
+
+$white : #FFFFFF;
+$pull-left : 5%;
+
+header-component {
+  .mat-toolbar {
+    width: 100%;
+    min-height: 100px;
+    @include linear-gradient(mat-color($app-primary), mat-color($app-accent));
+
+    span {
+      color: $white;
+      margin-left: $pull-left;
+    }
+
+    mat-icon {
+      color: $white;
+      margin-left: $pull-left/2;
+    }
+  }
+}
